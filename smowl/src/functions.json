@@ -1,0 +1,82 @@
+{
+  "functions": [
+    {
+      "name": "locate_device",
+      "description": "Locate the device on a map",
+      "parameters": {
+        "properties": {
+          "mode": {
+            "description": "The mode of location (e.g., GPS, Wi-Fi)."
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "translate_text",
+      "description": "Translate text from one language to another",
+      "parameters": {
+        "properties": {
+          "text": {
+            "description": "The text to translate."
+          },
+          "source_language": {
+            "description": "The language of the input text."
+          },
+          "target_language": {
+            "description": "The language to translate the text into."
+          }
+        },
+        "required": ["text", "target_language"]
+      }
+    },
+    {
+      "name": "share_location",
+      "description": "Share the current location with a contact",
+      "parameters": {
+        "properties": {
+          "to": {
+            "description": "The name of the contact to share the location with."
+          }
+        },
+        "required": ["to"]
+      }
+    },
+    {
+      "name": "send_email",
+      "description": "Send an email to a contact",
+      "parameters": {
+        "properties": {
+          "to": {
+            "description": "The email address of the recipient."
+          },
+          "subject": {
+            "description": "The subject of the email."
+          },
+          "body": {
+            "description": "The body content of the email."
+          }
+        },
+        "required": ["to", "subject", "body"]
+      }
+    },
+    {
+      "name": "get_directions",
+      "description": "Get directions between two locations",
+      "parameters": {
+        "properties": {
+          "start_location": {
+            "description": "The starting location or address."
+          },
+          "end_location": {
+            "description": "The destination location or address."
+          },
+          "mode_of_transport": {
+            "description": "The mode of transport (e.g., driving, walking, public transit)."
+          }
+        },
+        "required": ["start_location", "end_location", "mode_of_transport"]
+      }
+    }
+  ]
+}
