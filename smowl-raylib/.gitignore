@@ -1,0 +1,28 @@
+# Prerequisites
+*.d
+*.o
+*.obj
+*.exe
+*.dll
+
+# Build folders
+build/
+out/
+bin/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.ninja
+.ninja_deps
+.ninja_log
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
