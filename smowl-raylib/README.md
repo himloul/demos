@@ -13,29 +13,20 @@ This version uses a **local installation** of Raylib for faster builds and full 
 
 ## How to Build (Windows)
 
-We use **Ninja** and **CMake** for the most robust build process on Windows.
+**Option 1: Easy Build Script (Recommended)**
+We have included a PowerShell script that automatically finds CMake and Ninja for you.
+```powershell
+cd smowl-raylib
+.\build.ps1
+```
 
-1.  **Navigate to the project directory:**
-    ```powershell
-    cd smowl-raylib
-    ```
-
-2.  **Configure the project:**
-    *   *Using Ninja (Recommended):*
-        ```powershell
-        cmake -G "Ninja" -B build -S .
-        ```
-    *   *Note:* If Ninja is not in your PATH, you may need to provide the full path to it.
-
-3.  **Build the executable:**
-    ```powershell
-    cmake --build build
-    ```
-
-4.  **Run the application:**
-    ```powershell
-    .\build\smowl-raylib.exe
-    ```
+**Option 2: Manual Build**
+If you have CMake and Ninja in your PATH:
+```powershell
+cd smowl-raylib
+cmake -G "Ninja" -B build -S .
+cmake --build build
+```
 
 ## Project Structure
 
